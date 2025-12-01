@@ -54,14 +54,15 @@ const Index = () => {
             <div className="text-white">
               <h2 className="text-2xl md:text-3xl font-bold tracking-tight">АвтоКлючМастер</h2>
             </div>
-            <Button 
-              variant="outline"
-              className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:text-white"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              <Icon name="Phone" className="mr-2" size={18} />
-              Связаться
-            </Button>
+            <a href="tel:+79276077711">
+              <Button 
+                variant="outline"
+                className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:text-white"
+              >
+                <Icon name="Phone" className="mr-2" size={18} />
+                +7 927 607-77-11
+              </Button>
+            </a>
           </div>
         </div>
       </header>
