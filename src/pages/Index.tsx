@@ -110,6 +110,55 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Наши работы</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Примеры выполненных работ — от простых дубликатов до программирования сложных систем
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                image: "https://cdn.poehali.dev/projects/82a27de6-a702-44b3-8568-3731c924fa19/files/a97c609e-c3d1-4764-ae23-2d493bfcbf5e.jpg",
+                title: "Коллекция автоключей",
+                description: "Работаем с ключами всех марок автомобилей"
+              },
+              {
+                image: "https://cdn.poehali.dev/projects/82a27de6-a702-44b3-8568-3731c924fa19/files/1fe4106a-7df2-4114-bf02-62b765717040.jpg",
+                title: "Программирование",
+                description: "Современное оборудование для чип-ключей"
+              },
+              {
+                image: "https://cdn.poehali.dev/projects/82a27de6-a702-44b3-8568-3731c924fa19/files/2c190b1a-7cc2-4c49-a8d6-4215344dd670.jpg",
+                title: "Точная нарезка",
+                description: "Прецизионное изготовление ключей"
+              }
+            ].map((work, index) => (
+              <Card 
+                key={index} 
+                className="overflow-hidden border-none shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-scale-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img 
+                    src={work.image} 
+                    alt={work.title}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">{work.title}</h3>
+                  <p className="text-muted-foreground">{work.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-5xl mx-auto">
