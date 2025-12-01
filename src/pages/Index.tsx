@@ -95,8 +95,14 @@ const Index = () => {
           </Button>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
-          <Icon name="ChevronDown" size={32} />
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center animate-fade-in">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20">
+            <p className="text-white/90 text-sm mb-2">Нужна срочная помощь?</p>
+            <a href="tel:+79376657525" className="flex items-center justify-center gap-2 text-white font-semibold hover:text-primary transition-colors">
+              <Icon name="Phone" size={20} />
+              <span>+7 937 665-75-25</span>
+            </a>
+          </div>
         </div>
       </section>
 
