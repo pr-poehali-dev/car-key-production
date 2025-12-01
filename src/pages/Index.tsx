@@ -60,6 +60,9 @@ const Index = () => {
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in">
+          <div className="mb-4">
+            <div className="text-primary-foreground/80 text-lg md:text-xl font-medium mb-2">АвтоКлючМастер</div>
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
             Автоключи<br />любой сложности
           </h1>
@@ -269,11 +272,11 @@ const Index = () => {
       <footer className="bg-secondary text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <div className="mb-6">
-            <h3 className="text-2xl font-bold mb-2">АвтоКлючи</h3>
+            <h3 className="text-2xl font-bold mb-2">АвтоКлючМастер</h3>
             <p className="text-white/70">Профессиональное изготовление автомобильных ключей</p>
           </div>
           <div className="text-white/60 text-sm">
-            © 2024 АвтоКлючи. Все права защищены.
+            © 2024 АвтоКлючМастер. Все права защищены.
           </div>
         </div>
       </footer>
