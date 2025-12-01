@@ -48,6 +48,24 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <header className="absolute top-0 left-0 right-0 z-50 py-6">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between">
+            <div className="text-white">
+              <h2 className="text-2xl md:text-3xl font-bold tracking-tight">АвтоКлючМастер</h2>
+            </div>
+            <Button 
+              variant="outline"
+              className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:text-white"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Icon name="Phone" className="mr-2" size={18} />
+              Связаться
+            </Button>
+          </div>
+        </div>
+      </header>
+
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/90 to-primary/20" />
         
@@ -60,9 +78,6 @@ const Index = () => {
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in">
-          <div className="mb-4">
-            <div className="text-primary-foreground/80 text-lg md:text-xl font-medium mb-2">АвтоКлючМастер</div>
-          </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
             Автоключи<br />любой сложности
           </h1>
